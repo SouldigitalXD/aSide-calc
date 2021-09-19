@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <section class="header__container">
+            <figure class="header__logo">
+                <img class="header__logo--img" src="./assets/Logo.png" alt="">
+            </figure>
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Info</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="container" >
+                <section class="Container__Box">
+                    <div class="container__Box--On-premise">
+                        <img src="./assets/casa.png" alt="home">
+                        <span class="container__Box--span">On Premise</span>
+                    </div>
+                    <div class="container__Box--Remote">
+                        <img src="./assets/remote.png" alt="remote">
+                        <span class="container__Box--span">Remote</span>
+                    </div>
+                    <div class="container__Box--Hybrid">
+                        <img src="./assets/hybrid.png" alt="hybrid">
+                        <span class="container__Box--span">hybrid</span>
+                    </div>
+                    <div class="container__Box--Cloud">
+                        <img src="./assets/nube.png" alt="cloud">
+                        <span class="container__Box--span">cloud</span>
+                    </div>
+                </section>
+              <form class="formulario">
+                <input type="text" class="serverType" list="listanavegadores" placeholder="  Server Type">
+                <input type="text" class="serverDrive" list="listanavegadores" placeholder="  Driver Type">
+                <datalist id="listanavegadores">
+                  <option label="Chrome" value="Chrome">
+                  <option label="Firefox" value="Firefox">
+                  <option label="Internet Explorer" value="Internet Explorer">
+                  <option label="Microsoft Edge" value="Microsoft Edge">
+                  <option label="Safari" value="Safari">
+                </datalist>
+              </form> 
+
+                <section class="Bars__container">
+                    
+                    <div class="Bars__container--slider">
+                        <label class="Bars-label">Number of Drivers</label>                            
+                        <input type="range" min="0" max="24" value="16" step="1" class="Bar_slider">
+                        <div class="Bar-thumb">
+                          <div class="tooltip"></div>
+                        </div>
+                        <div class="class progress"></div>
+                    </div>
+
+                    <div class="Bars__container--slider"> 
+                        <label class="Bars-label">Number of Users</label>                            
+                        <input type="range" min="0" max="80" value="8" step="1" class="Bar_slider">
+                        <div class="Bar-thumb">
+                          <div class="tooltip"></div>
+                        </div>
+                        <div class="class progress"></div>
+                    </div>
+
+                </section>
+                <form class="formulario3">
+                    <input type="text" class="serverType" list="listanavegadores" placeholder="  NAS Type">
+                    <input type="text" class="serverDrive" list="listanavegadores" placeholder="  MediaHub Capacity">
+                    <input type="text" class="serverDrive" list="listanavegadores" placeholder="  Software Suites">
+                    <input type="text" class="serverDrive" list="listanavegadores" placeholder="  Typical Formats">
+                    <datalist id="listanavegadores"></datalist>  
+                </form>
+                <section class="Direct-Own-Need">
+                    <div>Direct Connect</div>
+                    <div>Own a switch</div>
+                    <div>Need a Switch</div>
+                </section>
+
+                <section class="Bars__container">
+                    
+                    <div class="Bars__container--slider">
+                        <label class="Bars-label">Number Remote of Users</label>                            
+                        <input type="range" min="0" max="80" value="8" step="1" class="Bar_slider">
+                        <div class="Bar-thumb">
+                          <div class="tooltip"></div>
+                        </div>
+                        <div class="class progress"></div>
+                    </div>
+
+                    <div class="Bars__container--slider"> 
+                        <label class="Bars-label">Number of Expansion Chassis</label>                            
+                        <input type="range" min="0" max="10" value="8" step="1" class="Bar_slider">
+                        <div class="Bar-thumb">
+                          <div class="tooltip"></div>
+                        </div>
+                        <div class="class progress"></div>
+                    </div>
+
+                    <div class="Bars__container--slider"> 
+                        <label class="Bars-label">Expansion Capacity</label>                            
+                        <input type="range" min="0" max="24" value="16" step="1" class="Bar_slider">
+                        <div class="Bar-thumb">
+                          <div class="tooltip"></div>
+                        </div>
+                        <div class="class progress"></div>
+                    </div>
+
+                </section>
+                <section class="checkBox">
+                    <div>
+                        <span class="switch-span">installation</span>
+                      <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                      </label>
+                    </div>
+                    <div>
+                      <span class="switch-span">Training</span>
+                      <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                      </label>
+                    </div>
+                </section>
+                <div>
+                    <button id="calculate">↓Calculate↓</button>
+                </div>
+                <section class="storage-Performance-Cost">
+                    <div class="result">7.68TB</div>
+                    <div class="result">710MB/s</div>
+                    <div class="result">$7,995</div>
+                </section>
+
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
